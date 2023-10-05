@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Deborah Mizrahi</title>
+  </head>
+  <body>
+
+      <form class="content">
+        <h1>Add Product</h1>
+        <label>Product name</label>
+        <input type="text" id="product_name_box" />
+        <span id="product_name_box_error"></span>
+
+        <label>Price</label>
+        <input type="number" id="price_box" />
+        <span id="price_box_error"></span>
+
+        <select id="category_box">
+          <option value="drinks">Drinks</option>
+          <option value="meat">Meat</option>
+          <option value="dairy">Dairy</option>
+          <option value="snacks">Snacks</option>
+          <option value="basic">Basic</option>
+        </select>
+
+        <label>Img link</label>
+        <input type="text" id="img_link_box" />
+        <span id="img_link_box_error"></span>
+
+        <div class="buttons">
+          <button type="button" onclick="add_product()">Add Product</button>
+          <button type="button" onclick="clear_list()">Clear list</button>
+        </div>
+      </form>
+
+        <h1>My cart</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody id="table_body_box"></tbody>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Deborah Mizrahi AJAX</title>
+  </head>
+  <body>
+    <main class="container">
+      <form id="search_country">
+        <label for="search_country">
+          Search a country
+          <input type="search" id="search_input" placeholder="Search a country" />
+        </label>
+        <a href="#" role="button" class="secondary switcher active" data-section="" id="all">Get all</a>
+        <a href="#" role="button" class="contrast" id="search">Search</a>
+      </form>
+
+      <article id="stats"></article>
+      <article id="currency"></article>
+      <section id="regions"></section>
+      <section id="countries"></section>
+    </main>
+  </body>
+</html>

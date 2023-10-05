@@ -1,0 +1,110 @@
+:root {
+    --main-color: rgb(85, 94, 216);
+}
+
+.content {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 40px;
+    text-align: justify;
+    width: 30%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h1 {
+    color: var(--main-color);
+    text-align: center;
+}
+
+form {
+    margin: top;
+
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input {
+    background-color: rgb(241, 241, 241);
+    border: unset;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+form input+span {
+    color: red;
+    font-size: 1rem;
+    position: relative;
+    top: -10px;
+}
+
+select {
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #333333;
+    font-size: 0.8rem;
+    height: 30px;
+    margin: 12px 0px 12px 0px;
+
+}
+
+form button {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin: 15px 3px;
+    padding: 7px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    min-width: 400px;
+
+}
+
+thead {
+    background-color: var(--main-color);
+    color: white;
+}
+
+table td,
+table th {
+    border: 1px solid var(--main-color);
+    padding: 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(225, 225, 225);
+}
+
+i {
+    cursor: pointer;
+}

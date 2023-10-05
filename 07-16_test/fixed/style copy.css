@@ -1,0 +1,33 @@
+th,
+td {
+    width: 250px;
+}
+
+#search_country {
+    align-items: center;
+    column-gap: 20px;
+    display: flex;
+}
+
+#search_country>label {
+    flex-grow: 1;
+}
+
+#currency ul {
+    column-gap: var(--block-spacing-horizontal);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#currency li {
+    list-style: none;
+    width: 100px;
+}
+
+main>section,
+main>article {
+    display: none;
+    max-height: 80vh;
+    overflow-y: auto;
+}
