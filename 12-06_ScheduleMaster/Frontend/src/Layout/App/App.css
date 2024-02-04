@@ -1,0 +1,11 @@
+.App {
+	height: 100%;
+    display: grid;
+    grid-template-rows: 10%;
+}
+
+.App main{
+    padding: 20px;
+}
+
+

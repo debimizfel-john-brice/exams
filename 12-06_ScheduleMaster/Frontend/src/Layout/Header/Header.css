@@ -1,0 +1,22 @@
+.Header {
+	/* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    border-bottom: 1px solid gray;
+}
+
+.Header nav{
+    display: flex;
+    gap: 20px;
+}
+
+
+.Header nav a{
+    text-decoration: unset;
+}
+
+.Header nav .active{
+    font-weight: bolder;
+}
+
