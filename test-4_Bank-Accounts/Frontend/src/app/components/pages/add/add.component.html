@@ -1,0 +1,45 @@
+<article>
+    <h4>Add Operation</h4>
+    <form (ngSubmit)="saveOperation()" ngNativeValidate>
+        <div class="grid">
+            <label>
+                Account number
+                <input type="number" name="account_number" [(ngModel)]="accounOperation.account_number"
+                    placeholder="1256346" required>
+            </label>
+            <label>
+                Operation
+                <select #operation_type name="operation_type" [(ngModel)]="accounOperation.operation_type">
+                    <option selected>Select a type</option>
+                    <option value="withdrawal">withdrawal</option>
+                    <option value="deposit">deposit</option>
+                    <option value="loan">loan</option>
+                </select>
+            </label>
+        </div>
+        @if (operation_type.value === "withdrawal" || operation_type.value === "deposit") {
+        <label>
+            Amount
+            <input type="number" name="amount" placeholder="364" [(ngModel)]="accounOperation.amount" required>
+        </label>
+        }
+        @if (operation_type.value === "loan") {
+        <label>
+            Amount
+            <input type="number" name="amount" placeholder="364" [(ngModel)]="accounOperation.amount" required>
+        </label>
+        <div class="grid">
+            <label>
+                Interest
+                <input type="number" name="interest" placeholder="34" [(ngModel)]="accounOperation.interest" required>
+            </label>
+            <label>
+                Amount of payments
+                <input type="number" name="amount_of_payments" placeholder="2"
+                    [(ngModel)]="accounOperation.amount_of_payments" required>
+            </label>
+        </div>
+        }
+        <button type="submit">Submit</button>
+    </form>
+</article>

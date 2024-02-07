@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+article {
+    max-width: 300px;
+}
+
+.not_found {
+    margin-top: 50px;
+    text-align: center;
+}

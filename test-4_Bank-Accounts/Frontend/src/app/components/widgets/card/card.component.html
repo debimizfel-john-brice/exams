@@ -1,0 +1,20 @@
+@if(accountOperation?.length){
+<div class="card">
+    @for (a of accountOperation; track a._id) {
+    <article>
+        <div><strong>Account number: </strong>{{a.account_number}}</div>
+        @if(!isLoan(a.operation_type)){
+        <div><strong>Date: </strong>{{a.date | date:"d/M/Y"}}</div>
+        <div><strong>Amount: </strong>{{a.amount}}$</div>
+        } @else {
+        <div><strong>Date: </strong>{{a.date | date:"d/M/Y"}}</div>
+        <div><strong>Amount: </strong>{{a.amount}}$</div>
+        <div><strong>Interest: </strong>{{a.interest}}</div>
+        <div><strong>Amount of payments: </strong>{{a.amount_of_payments}}</div>
+        }
+    </article>
+    }
+</div>
+} @else if(initSearch && !accountOperation?.length) {
+<h4 class="not_found">Oops! No account number found.</h4>
+}

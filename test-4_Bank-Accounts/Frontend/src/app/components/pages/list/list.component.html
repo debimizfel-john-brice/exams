@@ -1,0 +1,11 @@
+<div class="search_input">
+  <form class="search_input" (ngSubmit)="search()" ngNativeValidate>
+    <label>Search account number:
+      <input type="search" name="search" [(ngModel)]="account_to_search" placeholder="Search" required />
+    </label>
+    <div class="button">
+      <button role="button">Search</button>
+    </div>
+  </form>
+</div>
+<app-card [accountOperation]="accountOperation" [initSearch]="initSearch"/>

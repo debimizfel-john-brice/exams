@@ -1,0 +1,13 @@
+.search_input {
+    margin: auto;
+    max-width: 700px;
+}
+
+.button {
+    display: flex;
+    justify-content: right;
+}
+
+button {
+    max-width: 200px;
+}
